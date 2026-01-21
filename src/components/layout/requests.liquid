@@ -1,0 +1,57 @@
+<div class="xl:px-4">
+  <div class="flex flex-col gap-6 px-1 xl:px-4 mb-5 xl:mb-6">
+    <div class="flex items-center justify-between">
+      <div class="t-h1">Ваши заявки</div>
+      <a href="#" class="t-link">Все заявки</a>
+    </div>
+
+    <div class="flex xl:gap-1 overflow-auto scrollbar-hide max-xl:-mx-6 max-xl:px-6">
+      <button class="btn-tab active">Все</button>
+      <button class="btn-tab">Одобренные</button>
+      <button class="btn-tab">В обработке</button>
+      <button class="btn-tab">Отклоненные</button>
+      <button class="btn-tab">Черновики</button>
+    </div>
+  </div>
+  <div class="grid gap-3 2xl:grid-cols-3 md:max-xl:grid-cols-3">
+    <div class="bg-white rounded-3xl p-4 border-[3px] border-gray-light xl:border-4 xl:rounded-4xl flex flex-col items-start gap-3">
+      <div class="flex justify-between w-full">
+        <div class="status status-approved">Одобрено</div>
+        <button class="btn-icon size-8 bg-blue-light text-blue-main overflow-hidden">
+          {% include 'components/icons/services.liquid' %}
+        </button>
+      </div>
+
+      <div class="t-h2 py-2.5 px-2">Обследование</div>
+
+      <div class="flex items-center gap-5">
+        <button class="btn-orange">Памятка</button>
+        <button class="t-link">Отменить</button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-3xl p-4 border-[3px] border-gray-light xl:border-4 xl:rounded-4xl flex flex-col items-start gap-3">
+      <div class="flex justify-between w-full">
+        <div class="status status-pending">В обработке</div>
+        <button class="btn-icon size-8 bg-pink-light text-pink-main overflow-hidden">
+          {% include 'components/icons/services.liquid' %}
+        </button>
+      </div>
+
+      <div class="t-h2 py-2.5 px-2">Второе мнение</div>
+
+      <div class="flex items-center gap-5">
+        <button class="btn-orange">Памятка</button>
+        <button class="t-link">Отменить</button>
+      </div>
+    </div>
+
+    <div class="bg-pink-middle rounded-3xl p-4 border-[3px] border-pink-light xl:border-4 xl:rounded-4xl flex flex-col items-start gap-9">
+      <div class="t-h1 text-red-main pt-2 pl-2">
+        Оставьте заявку<br>
+        на помощь!
+      </div>
+      <button class="btn-pink">Все услуги</button>
+    </div>
+  </div>
+</div>

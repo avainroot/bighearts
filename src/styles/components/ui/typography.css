@@ -1,0 +1,21 @@
+@layer components {
+  .t-caption {
+    @apply text-xs uppercase text-gray-middle/50 tracking-[.02em];
+  }
+
+  .t-link {
+    @apply decoration-dotted underline text-gray-middle underline-offset-[25%] decoration-[12.5%] hover:text-orange-main transition-colors decoration-current/50;
+  }
+
+  .t-button {
+    @apply leading-[128%] text-gray-middle;
+  }
+
+  .t-h1 {
+    @apply text-xl leading-[132%];
+  }
+
+  .t-h2 {
+    @apply text-[16px] leading-[122%];
+  }
+}

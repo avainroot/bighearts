@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+  {% include 'components/layout/head.liquid' %}
+  <body>
+    <div id="app">
+      {% include 'components/layout/header.liquid' %}
+      <div class="xl:py-2 xl:row-span-2 flex xl:pr-2">
+        <div class="xl:bg-background-milk xl:rounded-[56px] w-full xl:border xl:border-gray-light xl:p-4 xl:pr-8 xl:overflow-y-auto">
+          {% block content %}
+          {% endblock %}
+        </div>
+      </div>
+      {% include 'components/layout/footer.liquid' %}
+    </div>
+  </body>
+</html>

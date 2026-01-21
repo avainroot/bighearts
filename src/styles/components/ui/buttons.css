@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn-pink {
+    @apply leading-none min-h-10.5 px-6 py-3 bg-pink-light text-red-main rounded-[100px] hover:bg-red-main hover:text-white transition-colors;
+  }
+
+  .btn-orange {
+    @apply leading-none min-h-10.5 px-6 py-3 bg-orange-light text-orange-main rounded-[100px] hover:bg-orange-main hover:text-white transition-colors;
+  }
+
+  .btn-icon {
+    @apply size-10 bg-gray-light rounded-full flex items-center justify-center text-gray text-[40px];
+  }
+
+  .btn-burger {
+    @apply size-10 rounded-full text-orange-main bg-orange-main/14 flex items-center justify-center;
+  }
+
+  .btn-notify {
+    @apply relative;
+  }
+  .btn-notify:after {
+    @apply content-[""] size-3 bg-red-main rounded-full border-2 border-white absolute top-px right-1;
+  }
+
+  .btn-quick {
+    @apply bg-white/24 text-white leading-[128%] px-4 rounded-[100px] min-h-8.5 py-2;
+  }
+
+  .btn-tab {
+    @apply leading-[128%] text-gray-dark min-h-8.5 py-2 px-4 rounded-[100px] transition-colors whitespace-nowrap;
+  }
+
+  .btn-tab.active {
+    @apply bg-gray-light;
+  }
+}

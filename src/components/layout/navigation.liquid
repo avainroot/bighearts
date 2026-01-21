@@ -1,0 +1,15 @@
+<nav class="flex flex-col gap-5 p-5 items-start xl:overflow-y-auto" role="navigation" aria-label="Основное меню">
+  {% for item in navigation %}
+    <a
+      class="t-button flex items-center gap-2 {% if item.link == route %}text-orange-main{% endif %}"
+      href="{{ item.link }}"
+    >
+      <span class="overflow-hidden btn-icon size-7.5 {% if item.link == route %}bg-orange-main/14 text-orange-main{% endif %}">
+        {% include 'components/icons/{{ item.icon }}.liquid' %}
+      </span>
+      <span>
+        {{ item.label }}
+      </span>
+    </a>
+  {% endfor %}
+</nav>

@@ -1,0 +1,13 @@
+@layer components {
+  .status {
+    @apply uppercase text-xs leading-[132%] tracking-[0.02em] py-1.5 px-3 flex items-center rounded-[26px];
+  }
+
+  .status-approved {
+    @apply text-green-main bg-green-light;
+  }
+
+  .status-pending {
+    @apply text-yellow-main bg-yellow-light;
+  }
+}

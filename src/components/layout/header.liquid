@@ -1,0 +1,21 @@
+<header class="flex items-center justify-between w-full xl:bg-background bg-background-milk h-16 px-5 py-2 xl:p-3 xl:pb-6 xl:h-auto xl:grid xl:grid-rows-[auto_1fr] xl:justify-stretch sticky top-0 xl:relative z-50 xl:overflow-hidden">
+  <a href="/" class="xl:mx-2.5 xl:my-4">
+    <img src="/src/assets/images/logo.svg" alt="Bighearts">
+  </a>
+  <div class="flex items-center gap-2 xl:hidden">
+    <button class="btn-icon">
+      {% include 'components/icons/phone.liquid' %}
+    </button>
+    <button class="btn-icon btn-notify">
+      {% include 'components/icons/bell.liquid' %}
+    </button>
+    <button class="btn-burger">
+      <img src="/src/assets/images/menu.svg">
+    </button>
+  </div>
+
+  <div class="hidden xl:flex xl:flex-col xl:self-stretch xl:justify-between xl:overflow-hidden">
+    {% include 'components/layout/navigation.liquid' %}
+    {% include 'components/layout/contacts.liquid' %}
+  </div>
+</header>

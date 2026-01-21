@@ -1,0 +1,49 @@
+{
+  "title": "Bighearts",
+  "h1": "Bighearts",
+  "description": "Bighearts | Test Case",
+  "navigation": [
+    {
+      "label": "Главная",
+      "icon": "home",
+      "link": "/"
+    },
+    {
+      "label": "Профиль",
+      "icon": "profile",
+      "link": "/profile"
+    },
+    {
+      "label": "Услуги",
+      "icon": "services",
+      "link": "/services"
+    },
+    {
+      "label": "Мероприятия",
+      "icon": "events",
+      "link": "/events"
+    },
+    {
+      "label": "Мои документы",
+      "icon": "docs",
+      "link": "/docs"
+    },
+    {
+      "label": "FAQ",
+      "icon": "faq",
+      "link": "/faq"
+    },
+    {
+      "label": "Мои уведомления",
+      "icon": "bell",
+      "link": "/notifications"
+    }
+  ],
+  "footer": {
+    "ref": {
+      "url": "#",
+      "label": "Основной сайт"
+    },
+    "copyright": "© 2019–2025 БФ «Онкологика»"
+  }
+}

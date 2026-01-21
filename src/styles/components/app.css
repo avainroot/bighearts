@@ -1,0 +1,9 @@
+@import "./fonts.css";
+@import "./ui/typography.css";
+@import "./ui/buttons.css";
+@import "./ui/status.css";
+@import "./ui/helper.css";
+
+#app {
+  @apply font-normalidad text-foreground bg-background-milk min-h-screen text-sm leading-[132%] xl:bg-background xl:grid xl:grid-cols-[280px_1fr] xl:grid-rows-[1fr_auto] xl:h-screen xl:overflow-hidden;
+}
