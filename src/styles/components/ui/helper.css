@@ -3,11 +3,17 @@
     @apply flex items-end p-1 overflow-hidden relative rounded-2xl md:rounded-4xl md:p-2 min-h-35 md:min-h-59;
   }
 
+  .helper:hover {
+    .helper-text {
+      @apply text-orange-main;
+    }
+  }
+
   .helper-image {
     @apply absolute left-0 top-0 right-0 mx-auto w-26.5 md:w-47;
   }
 
   .helper-text {
-    @apply z-10 bg-white p-2 rounded-t-sm rounded-b-xl md:rounded-t-lg md:rounded-b-3xl md:p-4 text-gray-middle w-full max-md:text-[10px] leading-[132%];
+    @apply z-10 bg-white p-2 rounded-t-sm rounded-b-xl md:rounded-t-lg md:rounded-b-3xl md:p-4 text-gray-middle w-full max-md:text-[10px] leading-[132%] transition-colors;
   }
 }
